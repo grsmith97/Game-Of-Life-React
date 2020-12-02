@@ -23,8 +23,8 @@ const grow = (grid) => {
     row.forEach((cell, cellIndex) => {
       let newValue = 0;
       const top = grid[rowIndex - 1] ? grid[rowIndex - 1][cellIndex] : 0;
-      const left = row[cellIndex - 1] ? row[cellIndex - 1] : 0;
-      const right = row[cellIndex + 1] ? row[cellIndex + 1] : 0;
+      const left = row[cellIndex - 1] || 0;
+      const right = row[cellIndex + 1] || 0;
       const bottom = grid[rowIndex + 1] ? grid[rowIndex + 1][cellIndex] : 0;
 
       const topLeft = grid[rowIndex - 1] ? grid[rowIndex - 1][cellIndex - 1] || 0 : 0;

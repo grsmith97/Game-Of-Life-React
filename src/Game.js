@@ -32,13 +32,6 @@ const grow = (grid) => {
       const bottomLeft = grid[rowIndex + 1] ? grid[rowIndex + 1][cellIndex - 1] || 0 : 0;
       const bottomRight = grid[rowIndex + 1] ? grid[rowIndex + 1][cellIndex + 1] || 0 : 0;
 
-      console.log({
-        topLeft,
-        topRight,
-        bottomLeft,
-        bottomRight
-      });
-
       const liveAdjacencyCount = top + left + right + bottom + topLeft + topRight + bottomLeft + bottomRight;
 
       if (cell === 1) {

@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+See the project in action [here](http://grsmith97.github.io/reaction-to-life).
+
 ## The Game of Life
 
 This project demonstrates Conway's Game of Life in React. 

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reaction-to-life/static/css/main.3e23a133.chunk.css",
-    "main.js": "/reaction-to-life/static/js/main.b66a900e.chunk.js",
-    "main.js.map": "/reaction-to-life/static/js/main.b66a900e.chunk.js.map",
+    "main.js": "/reaction-to-life/static/js/main.50d588f3.chunk.js",
+    "main.js.map": "/reaction-to-life/static/js/main.50d588f3.chunk.js.map",
     "runtime-main.js": "/reaction-to-life/static/js/runtime-main.24b44c7f.js",
     "runtime-main.js.map": "/reaction-to-life/static/js/runtime-main.24b44c7f.js.map",
     "static/js/2.c197771d.chunk.js": "/reaction-to-life/static/js/2.c197771d.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.24b44c7f.js",
     "static/js/2.c197771d.chunk.js",
     "static/css/main.3e23a133.chunk.css",
-    "static/js/main.b66a900e.chunk.js"
+    "static/js/main.50d588f3.chunk.js"
   ]
 }

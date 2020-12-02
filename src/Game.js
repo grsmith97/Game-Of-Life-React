@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const initialState = [
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
-  [0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
-  [0, 0, 1, 1, 0, 0, 0, 0, 0, 0]
-];
+const seed = new Date().getMilliseconds();
+const initialState = [];
+
+const getRandomInt = (max) => Math.floor(Math.random(seed) * Math.floor(max));
+
+for (let i = 0; i <= 100; ++i) {
+  let row = [];
+  for (let j = 0; j <= 100; j++) {
+    row.push(getRandomInt(2));
+  }
+  initialState.push(row);
+}
 
 const grow = (grid) => {
   let newArray = [];
@@ -68,14 +68,16 @@ function Game() {
 
   return (
     <div className="App">
-      A Reaction To Life
-      {grid.map(row =>
-        <div className='row'>
-          {row.map(cell =>
-            cell ? <div className='cell' /> : <div className='empty' />
-          )}
-        </div>
-      )}
+      <div className='header'>A Reaction to Life</div>
+      <div className='grid'>
+        {grid.map(row =>
+          <div className='row'>
+            {row.map(cell =>
+              cell ? <div className='cell' /> : <div className='empty' />
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

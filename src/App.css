@@ -5,6 +5,16 @@
   align-items: center;
 }
 
+.header {
+  font-size: xx-large;
+  font-weight: bold;
+  padding: .5em;
+}
+
+.grid {
+  border: 5px solid black;
+}
+
 .row {
   display: flex;
   flex-flow: row nowrap;
